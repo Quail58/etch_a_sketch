@@ -23,22 +23,12 @@ body {
     width: 500px;
     height: 500px;
     display: grid;
-    grid-gap: 0;
     grid-template-columns: repeat(var(--grid-cols), 1fr);
     grid-template-rows: repeat(var(--grid-cols), 1fr);
     border: 5px solid black;
 }
 
 .grid-item {
-    padding: 1px;
     text-align: center;
     background-color: white;
-}
-
-.grid-item:hover {
-    background-color: black;
-}
-
-.grid-item:hover::after {
-    background-color: black;
 }
