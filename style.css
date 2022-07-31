@@ -41,7 +41,19 @@ body {
 #buttons {
     display: flex;
     flex-direction: column;
+    align-items: center;
     padding: 15px;
     border: 5px solid black;
     border-right: 0;
+}
+
+button {
+    width: 80px;
+    margin: 20px;
+    margin-bottom: 50px;
+    padding: 15px;
+}
+
+.slider {
+    margin-top: 25px;
 }
