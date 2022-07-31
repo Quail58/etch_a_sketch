@@ -11,4 +11,13 @@ function makeGrid(rows, cols){
     }  
 }
 
+var slider = document.getElementById("myRange");
+var output = document.getElementById("range");
+output.innerHTML = slider.value;
+
+
+slider.oninput = function() {
+  output.innerHTML = this.value;
+}
+
 console.log(makeGrid(16,16))
