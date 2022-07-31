@@ -20,4 +20,4 @@ slider.oninput = function() {
   output.innerHTML = this.value;
 }
 
-console.log(makeGrid(16,16))
+console.log(makeGrid(slider.value,slider.value))
