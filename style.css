@@ -32,3 +32,16 @@ body {
     text-align: center;
     background-color: white;
 }
+
+#device {
+    display: flex;
+    flex-direction: row;
+}
+
+#buttons {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    border: 5px solid black;
+    border-right: 0;
+}
