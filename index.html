@@ -14,7 +14,7 @@
     <div id="device">
         <div id="buttons">
             <button class="color">Color</button>
-            <button class="random">Random</button>
+            <button class="random" onclick="randomize()">Random</button>
             <button id="reset" onclick="clearGrid()">Reset</button>
             <input type="range" min="1" max="100" value="16" class="slider" id="myRange" onmouseup="makeGrid(slider.value,slider.value), clearGrid()">
             <div id="range"></div>
