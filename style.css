@@ -28,9 +28,9 @@ body {
     border: 5px solid black;
 }
 
-.grid-item {
-    text-align: center;
+.gridItem {
     background-color: white;
+    color: white;
 }
 
 #device {
