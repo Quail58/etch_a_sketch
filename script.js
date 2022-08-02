@@ -11,7 +11,6 @@ function makeGrid(rows, cols){
     grid.style.setProperty('--grid-cols', cols);
     for (i = 0; i < (rows * cols); i++){
         let cell = document.createElement("div");
-        cell.style.backgroundColor = "white";
         // event listener to see if the mouse is over and change the color of the box        
         cell.addEventListener('mouseover', function changeBlack() {cell.style.backgroundColor = pencilColor;});
         grid.appendChild(cell).className = "gridItem";
@@ -20,13 +19,24 @@ function makeGrid(rows, cols){
 
 
 
-clears the grid
+// clears the grid and then resets it to original value
 function clearGrid() {
   while(grid.firstChild){
     grid.removeChild(grid.lastChild);
   }
   makeGrid(slider.value,slider.value);
 }
+
+// function that cycles through a random color
+function randomColor() {
+  let color = [];
+  for (let i = 0; i < 3; i++) {
+    color.push(Math.floor(Math.random() * 256));
+  }
+  return 'rgb(' + color.join(', ') + ')';
+}
+// randomize pencil color
+
 
 
 // displays the value of the slider on screen
