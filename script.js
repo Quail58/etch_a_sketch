@@ -35,8 +35,17 @@ function randomColor() {
   }
   return 'rgb(' + color.join(', ') + ')';
 }
-// randomize pencil color
 
+// set random button to a random color every mouseover
+function randomize(){
+    let val = slider.value;
+    let cell = grid.children;
+    for (let i = 0; i < val*val; i++) {
+        cell[i].addEventListener('mouseover', function(event){
+            event.target.style.backgroundColor = randomColor();
+        })
+    }
+}
 
 
 // displays the value of the slider on screen
