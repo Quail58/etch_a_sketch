@@ -12,7 +12,7 @@ function makeGrid(rows, cols){
     for (i = 0; i < (rows * cols); i++){
         let cell = document.createElement("div");
         // event listener to see if the mouse is over and change the color of the box        
-        cell.addEventListener('mouseover', function changeBlack() {cell.style.backgroundColor = pencilColor;});
+        cell.addEventListener('mouseover', function changeBlack() {cell.style.backgroundColor = 'black';});
         grid.appendChild(cell).className = "gridItem";
     }  
 }
