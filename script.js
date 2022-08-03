@@ -47,6 +47,33 @@ function randomize(){
     }
 }
 
+function makeBlack(){
+  pencilColor = "black";
+}
+
+function makeGreen(){
+  pencilColor = "green";
+}
+
+function makeBlue(){
+  pencilColor = "blue";
+}
+
+function makeRed(){
+  pencilColor = "Red";
+}
+
+//allows you to pick the color from the buttons
+function makeColor(){
+  let val = slider.value;
+  let cell = grid.children;
+  for (let i = 0; i < val*val; i++) {
+      cell[i].addEventListener('mouseover', function(event){
+          event.target.style.backgroundColor = pencilColor;
+      })
+  }
+}
+
 
 // displays the value of the slider on screen
 var slider = document.getElementById("myRange");
